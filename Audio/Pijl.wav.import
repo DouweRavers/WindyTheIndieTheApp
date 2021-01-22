@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Pijl.wav-070d987ffc5448f2fdc9cd51a7796ebe.sample"
+
+[deps]
+
+source_file="res://Audio/Pijl.wav"
+dest_files=[ "res://.import/Pijl.wav-070d987ffc5448f2fdc9cd51a7796ebe.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

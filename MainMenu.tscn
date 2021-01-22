@@ -1,0 +1,152 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://source/SceneScripts/MainMenu.cs" type="Script" id=2]
+[ext_resource path="res://Graphics/UIGraphics/PlayButtonPressed.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/UIGraphics/PlayButton.png" type="Texture" id=25]
+[ext_resource path="res://Graphics/UIGraphics/HelpButtonPressed.png" type="Texture" id=27]
+[ext_resource path="res://Graphics/UIGraphics/Banner.svg" type="Texture" id=28]
+[ext_resource path="res://Graphics/UIGraphics/HelpButton.png" type="Texture" id=29]
+[ext_resource path="res://Audio/click.wav" type="AudioStream" id=30]
+[ext_resource path="res://Graphics/unispace bold.ttf" type="DynamicFontData" id=31]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 31 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 50
+outline_size = 4
+outline_color = Color( 0.329412, 0.329412, 0.329412, 1 )
+font_data = ExtResource( 31 )
+
+[node name="IntroMovie" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 28 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayInfinite" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -702.648
+margin_top = -422.562
+margin_right = -484.648
+margin_bottom = -207.562
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 6 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PlayInfinite"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -143.498
+margin_top = -4.59802
+margin_right = 207.502
+margin_bottom = 48.402
+custom_fonts/font = SubResource( 1 )
+text = "Infinite Mode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayStory" type="TextureButton" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -556.606
+margin_top = -273.27
+margin_right = -335.606
+margin_bottom = -70.2704
+texture_normal = ExtResource( 25 )
+texture_pressed = ExtResource( 6 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StoryMode" type="Label" parent="PlayStory"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -119.816
+margin_top = 5.12476
+margin_right = 150.184
+margin_bottom = 58.1248
+custom_fonts/font = SubResource( 1 )
+text = "Story Mode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial" type="TextureButton" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -184.416
+margin_top = -197.529
+margin_right = -51.4164
+margin_bottom = -56.5292
+texture_normal = ExtResource( 29 )
+texture_pressed = ExtResource( 27 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Tutorial"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -83.7172
+margin_top = -3.86621
+margin_right = 106.283
+margin_bottom = 49.1338
+custom_fonts/font = SubResource( 1 )
+text = "Tutorial"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 1.0
+margin_top = 81.4837
+margin_bottom = 157.484
+custom_fonts/font = SubResource( 2 )
+text = "Windy The Indie"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 30 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+[connection signal="button_down" from="PlayInfinite" to="." method="_on_InfiniteMode_button_down"]
+[connection signal="button_down" from="Tutorial" to="." method="_on_Tutorial_button_down"]
+[connection signal="timeout" from="Timer" to="." method="timeout"]

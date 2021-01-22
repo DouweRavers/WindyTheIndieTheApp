@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Prefab/MapTextures.tres" type="TileSet" id=1]
+[ext_resource path="res://source/Map.cs" type="Script" id=3]
+
+[node name="Map" type="TileMap"]
+tile_set = ExtResource( 1 )
+collision_mask = 0
+format = 1
+script = ExtResource( 3 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="noSort" type="Node2D" parent="."]

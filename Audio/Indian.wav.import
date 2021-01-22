@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Indian.wav-a07739e6c053110efcc0181c034403c4.sample"
+
+[deps]
+
+source_file="res://Audio/Indian.wav"
+dest_files=[ "res://.import/Indian.wav-a07739e6c053110efcc0181c034403c4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

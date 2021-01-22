@@ -1,0 +1,91 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Prefab/TreeTextures.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://source/Objects/Tree.cs" type="Script" id=2]
+[ext_resource path="res://Graphics/unispace.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Graphics/TreeTextures/fireoutsymbol2.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/TreeTextures/fireoutsymbol0.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/TreeTextures/fireoutsymbol1.png" type="Texture" id=6]
+[ext_resource path="res://Audio/vuur.wav" type="AudioStream" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 7.61278
+height = 13.5976
+
+[sub_resource type="AnimatedTexture" id=3]
+flags = 4
+frames = 3
+fps = 5.0
+frame_0/texture = ExtResource( 5 )
+frame_1/texture = ExtResource( 6 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 4 )
+frame_2/delay_sec = 0.0
+
+[node name="Tree" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="GrowTimer" type="Timer" parent="."]
+wait_time = 1000.0
+one_shot = true
+
+[node name="messageTimer" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+
+[node name="messages" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -62.1306
+margin_top = -58.5531
+margin_right = 59.8694
+margin_bottom = -42.5531
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.937255, 0.584314, 0.0352941, 1 )
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -0.203891, -19.779 )
+frames = ExtResource( 1 )
+animation = "Sapling"
+frame = 2
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.407814, -14.2735 )
+shape = SubResource( 2 )
+
+[node name="endFire" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2( -10.1953, -25.8961 )
+scale = Vector2( 0.0752726, 0.0846825 )
+normal = SubResource( 3 )
+pressed = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="endFire"]
+wait_time = 0.1
+one_shot = true
+
+[node name="Fire" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+volume_db = -15.0
+attenuation = 0.466517
+[connection signal="timeout" from="GrowTimer" to="." method="_Grow"]
+[connection signal="timeout" from="messageTimer" to="." method="_messageTimer"]
+[connection signal="pressed" from="endFire" to="." method="_on_endFire"]
+[connection signal="timeout" from="endFire/Timer" to="." method="_on_Timer_timeout"]

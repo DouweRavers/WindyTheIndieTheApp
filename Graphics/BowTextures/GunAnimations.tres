@@ -1,0 +1,29 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=2]
+
+[ext_resource path="res://dummyGraphics/Dummy0002.png" type="Texture" id=1]
+[ext_resource path="res://dummyGraphics/Dummy0010.png" type="Texture" id=2]
+[ext_resource path="res://dummyGraphics/Dummy0011.png" type="Texture" id=3]
+[ext_resource path="res://dummyGraphics/Dummy0000.png" type="Texture" id=4]
+[ext_resource path="res://dummyGraphics/Dummy0003.png" type="Texture" id=5]
+[ext_resource path="res://dummyGraphics/Dummy0012.png" type="Texture" id=6]
+[ext_resource path="res://dummyGraphics/Dummy0001.png" type="Texture" id=7]
+[ext_resource path="res://dummyGraphics/Dummy0004.png" type="Texture" id=8]
+[ext_resource path="res://dummyGraphics/Dummy0005.png" type="Texture" id=9]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Release",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 1 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Draw",
+"speed": 8.0
+} ]

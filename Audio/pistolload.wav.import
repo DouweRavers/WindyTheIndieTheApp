@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pistolload.wav-57368efb0f1264374220e433de2abe33.sample"
+
+[deps]
+
+source_file="res://Audio/pistolload.wav"
+dest_files=[ "res://.import/pistolload.wav-57368efb0f1264374220e433de2abe33.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

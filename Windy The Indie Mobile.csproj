@@ -1,0 +1,37 @@
+﻿<Project Sdk="Godot.NET.Sdk/3.2.3">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Tools</Configuration>
+    <ProjectGuid>{A07DA5B3-703B-4133-B859-3DB5824F5DC2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WindyTheIndieMobile</RootNamespace>
+    <AssemblyName>Windy The Indie Mobile</AssemblyName>
+    <GodotProjectGeneratorVersion>1.0.7374.17554</GodotProjectGeneratorVersion>
+    <TargetFramework>net472</TargetFramework>
+    <!--The following properties were overriden during migration to prevent errors.
+    Enabling them may require other manual changes to the project and its files.-->
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="source\NPC\Cutter.cs" />
+    <Compile Include="source\NPC\Torcher.cs" />
+    <Compile Include="source\SceneScripts\IntroMovie.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="source\GLOBAL.cs" />
+    <Compile Include="source\Objects\Tree.cs" />
+    <Compile Include="source\Objects\Arrow.cs" />
+    <Compile Include="source\NPC\Buddy.cs" />
+    <Compile Include="source\Game.cs" />
+    <Compile Include="source\Map.cs" />
+    <Compile Include="source\Player.cs" />
+    <Compile Include="source\Objects\Pointer.cs" />
+    <Compile Include="source\SceneScripts\InfiniteMode.cs" />
+    <Compile Include="source\SceneScripts\MainMenu.cs" />
+    <Compile Include="source\UI.cs" />
+    <Compile Include="source\SceneScripts\Tutorial.cs" />
+  </ItemGroup>
+</Project>

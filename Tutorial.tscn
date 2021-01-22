@@ -1,0 +1,75 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Graphics/UIGraphics/PlayButtonPressed.png" type="Texture" id=1]
+[ext_resource path="res://Graphics/UIGraphics/PlayButton.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/tutorial/Slide1.jpg" type="Texture" id=3]
+[ext_resource path="res://Graphics/tutorial/Slide4.jpg" type="Texture" id=4]
+[ext_resource path="res://Graphics/tutorial/Slide3.jpg" type="Texture" id=5]
+[ext_resource path="res://Graphics/tutorial/Slide2.jpg" type="Texture" id=6]
+[ext_resource path="res://Graphics/tutorial/Slide5.jpg" type="Texture" id=7]
+[ext_resource path="res://source/SceneScripts/Tutorial.cs" type="Script" id=8]
+[ext_resource path="res://Audio/click.wav" type="AudioStream" id=9]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Controls",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "Game",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Shop",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "Pointers",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Intro",
+"speed": 5.0
+} ]
+
+[node name="Tutorial" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[node name="Dia" type="AnimatedSprite" parent="."]
+position = Vector2( 596.796, 330.055 )
+scale = Vector2( 0.943564, 0.940095 )
+frames = SubResource( 1 )
+animation = "Intro"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="next" type="TextureButton" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 990.203
+margin_top = -198.874
+margin_right = 1174.2
+margin_bottom = -23.8744
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 1 )
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="next" to="." method="_next"]

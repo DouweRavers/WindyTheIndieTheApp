@@ -1,0 +1,24 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=2]
+
+[ext_resource path="res://Graphics/BowTextures/bow4.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/BowTextures/bow3.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/BowTextures/bow0.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/BowTextures/bow2.png" type="Texture" id=5]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Release",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "Draw",
+"speed": 8.0
+} ]

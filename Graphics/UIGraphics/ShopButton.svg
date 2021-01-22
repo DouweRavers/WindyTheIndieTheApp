@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200mm"
+   height="130mm"
+   viewBox="0 0 200 130"
+   version="1.1"
+   id="svg949"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="ShopButton.svg"
+   inkscape:export-filename="/home/douwe/Documents/Dev/LD46/Graphics/UIGraphics/ShopButton.svg.png"
+   inkscape:export-xdpi="95"
+   inkscape:export-ydpi="95">
+  <defs
+     id="defs943">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="23.977864 : 256.40038 : 1"
+       inkscape:vp_y="0 : 999.99995 : 0"
+       inkscape:vp_z="139.51334 : 211.95865 : 1"
+       inkscape:persp3d-origin="36.3737 : 111.40234 : 1"
+       id="perspective951" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="-6.305398"
+     inkscape:cy="274.71172"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata946">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Laag 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-167)">
+    <path
+       sodipodi:type="star"
+       style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.46499997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path969"
+       sodipodi:sides="5"
+       sodipodi:cx="73.042664"
+       sodipodi:cy="114.80159"
+       sodipodi:r1="70.742905"
+       sodipodi:r2="35.371452"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.4137167"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 123.06545,164.82438 40.926057,177.83398 3.1707214,103.73496 61.976035,44.929648 136.07505,82.684983 Z"
+       inkscape:transform-center-x="9.1548057"
+       inkscape:transform-center-y="-9.1548066"
+       transform="matrix(0.96179602,0,0,0.92845633,-1.1191002,128.47811)" />
+    <path
+       sodipodi:type="star"
+       style="fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.46499997;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path969-3"
+       sodipodi:sides="5"
+       sodipodi:cx="84.394089"
+       sodipodi:cy="126.48578"
+       sodipodi:r1="70.742905"
+       sodipodi:r2="35.371452"
+       sodipodi:arg1="0.78539816"
+       sodipodi:arg2="1.4137167"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 134.41688,176.50857 52.277482,189.51817 14.522147,115.41915 73.32746,56.613837 147.42648,94.369172 Z"
+       inkscape:transform-center-x="8.6715372"
+       inkscape:transform-center-y="-8.7319464"
+       transform="matrix(0.91102421,0,0,0.88557096,-6.2861032,123.03507)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot857"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:KacstOne;-inkscape-font-specification:KacstOne;letter-spacing:0px;word-spacing:0px;fill:#008000;fill-opacity:1;stroke:none"
+       transform="matrix(0.63315833,0,0,0.44415254,-68.275323,115.67643)"><flowRegion
+         id="flowRegion859"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:KacstOne;-inkscape-font-specification:KacstOne;fill:#008000"><rect
+           id="rect861"
+           width="182.30096"
+           height="220.97086"
+           x="171.25243"
+           y="159.88228"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:KacstOne;-inkscape-font-specification:KacstOne;fill:#008000" /></flowRegion><flowPara
+         id="flowPara863">$</flowPara></flowRoot>  </g>
+</svg>

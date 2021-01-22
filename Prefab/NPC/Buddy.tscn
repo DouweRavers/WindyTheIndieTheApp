@@ -1,0 +1,61 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Graphics/Buddy/Idle0001.png" type="Texture" id=1]
+[ext_resource path="res://source/NPC/Buddy.cs" type="Script" id=2]
+[ext_resource path="res://dummyGraphics/Dummy0021.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/Buddy/Idle0000.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/Buddy/Walk0002.png" type="Texture" id=5]
+[ext_resource path="res://Graphics/Buddy/Walk0001.png" type="Texture" id=6]
+[ext_resource path="res://Graphics/Buddy/Walk0003.png" type="Texture" id=7]
+[ext_resource path="res://Graphics/Buddy/Walk0000.png" type="Texture" id=8]
+[ext_resource path="res://Graphics/Buddy/Walk0004.png" type="Texture" id=9]
+[ext_resource path="res://Graphics/Buddy/Attack0005.png" type="Texture" id=10]
+[ext_resource path="res://Graphics/Buddy/Attack0000.png" type="Texture" id=11]
+[ext_resource path="res://Graphics/Buddy/Attack0002.png" type="Texture" id=12]
+[ext_resource path="res://Graphics/Buddy/Attack0001.png" type="Texture" id=13]
+[ext_resource path="res://Graphics/Buddy/Attack0004.png" type="Texture" id=15]
+[ext_resource path="res://Graphics/Buddy/Attack0003.png" type="Texture" id=16]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 15 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Attack",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Walking",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 3.66538
+height = 19.7243
+
+[node name="Buddy" type="KinematicBody2D"]
+collision_layer = 8
+collision_mask = 10
+script = ExtResource( 2 )
+
+[node name="Shadows" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 0.211765 )
+position = Vector2( -5.30157, 10.8071 )
+rotation = 0.115546
+scale = Vector2( 0.359194, 0.13648 )
+texture = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -1.46304, -1.21918 )
+frames = SubResource( 1 )
+animation = "Idle"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.00201213, 0.245512 )
+shape = SubResource( 2 )
